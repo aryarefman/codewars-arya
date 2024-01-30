@@ -24,3 +24,4 @@
 const XO = str => str.match(/x/ig).length === str.match(/o/ig).length;
 
 console.log(XO('xXoo'));
+console.log(XO('xXXoO'));

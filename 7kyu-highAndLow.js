@@ -17,13 +17,13 @@
 
 
 // const highAndLow = numbers => {
-//     const number = numbers.split(' ').map(Number);
+//     const number = numbers.split(' ');
 //     return `${Math.max(...number)} ${Math.min(...number)}`;
 // }
 
 
 function highAndLow(numbers){
-    numbers = numbers.split(' ');
+    numbers = numbers.split(' ').map(Number);
     return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
 }
 

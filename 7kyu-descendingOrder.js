@@ -6,7 +6,6 @@
 //     return number;
 // }
 
-
 const descendingOrder = n => parseInt(n.toString().split('').sort((a, b) => b - a).join(''));
 
-console.log(descendingOrder(1209856))
+console.log(descendingOrder(1207869));
