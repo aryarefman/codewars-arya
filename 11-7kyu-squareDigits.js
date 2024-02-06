@@ -8,6 +8,9 @@
 // }
 
 
-const squareDigits = num => Number(num.toString().split('').map(e => e * e).join(''));
+// const squareDigits = num => Number(num.toString().split('').map(e => e * e).join(''));
+
+
+const squareDigits = num => Number(String(num).split('').map(e => e * e).join(''));
 
 console.log(squareDigits(567));

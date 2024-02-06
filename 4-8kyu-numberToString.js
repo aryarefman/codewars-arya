@@ -3,6 +3,9 @@
 // const numberToString = num => '' + num;
 
 
-const numberToString = num => num.toString();
+// const numberToString = num => num.toString();
+
+
+const numberToString = num => String(num);
 
 console.log(numberToString(5));

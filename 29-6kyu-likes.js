@@ -46,7 +46,7 @@ function likes (names) {
     var idx = Math.min(names.length, 4);
     
     return templates[idx].replace(/{name}|{n}/g, function (val) {
-      return val === '{name}' ? names.shift() : names.length;
+      return (val === '{name}') ? names.shift() : names.length;
     });
 }
 
