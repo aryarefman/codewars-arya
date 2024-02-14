@@ -4,7 +4,9 @@ const digitalRoot = n => {
     if (String(n).length === 1) {
         return n;
     }
-
+    
+    // menggunakan callback
+    // +curr = tanda plus(+) berfungsi mengubah 'string' menjadi 'number'
     return digitalRoot(n.toString().split('').reduce((prev, curr) => prev + +curr, 0));
 }
 
