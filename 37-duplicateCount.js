@@ -27,7 +27,10 @@ const duplicateCount = text =>
         .split('')
         .sort()
         .join('')
-        .match(/([^])\1+/g) || []).length;
+        // /([^])\1+/g : ambil karakter yang jumlahnya lebih dari satu / berduplikat
+        // [] : untuk mengubah hasil yang bernilai 'null' menjadi array kosong
+        .match(/([^])\1+/g) || [])
+        .length;
 
 console.log(duplicateCount(""));
 console.log(duplicateCount("abcde"));
